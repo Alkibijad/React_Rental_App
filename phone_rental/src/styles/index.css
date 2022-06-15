@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: lightgray;
+  height: 100vh;
+}
+
+.navbar {
+  padding: 20px 0;
+}
+
+.navbar .navbar-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.navbar .navbar-list li {
+  list-style: none;
+  background-color: #eb043c;
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+
+.navbar .navbar-list li a {
+  color: white;
+  text-decoration: none;
+}
+
+.table {
+  border: 1px solid black;
+  padding: 5%;
+  width: 80vw;
+  margin: 50px auto 0 auto;
+}
+
+.table th,
+.table td {
+  text-align: start;
+  border-bottom: 2px solid black;
+}
+
+.table th .btnEdit,
+.table td .btnEdit {
+  background-color: orange;
+  border: none;
+  padding: 5px;
+  color: white;
+}
+
+.table th .btnDelete,
+.table td .btnDelete {
+  background-color: #eb043c;
+  border: none;
+  padding: 5px;
+  color: white;
+}
+
+.add_rental_form {
+  width: 400px;
+  margin: 50px auto 0 auto;
+}
+
+.add_rental_form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.add_rental_form form input {
+  padding: 5px 0;
+  margin: 5px 0;
+}
+
+.add_rental_form form button {
+  color: white;
+  background-color: #eb043c;
+  border: none;
+  width: 100px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=index.css.map */

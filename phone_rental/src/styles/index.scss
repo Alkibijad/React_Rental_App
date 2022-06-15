@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(211, 211, 211);
+  height: 100vh;
+
+}
+
+.navbar {
+  padding: 20px 0;
+  .navbar-list {
+    display: flex;
+    justify-content: space-around;
+    li {
+      list-style: none;
+      background-color: #eb043c;
+      padding: 20px 30px;
+      border-radius: 10px;
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.table {
+  border: 1px solid black;
+  padding: 5%;
+  width: 80vw;
+  margin: 50px auto 0 auto;
+
+  th,
+  td {
+    text-align: start;
+    border-bottom: 2px solid black;
+    .btnEdit{
+      background-color: orange;
+      border: none;
+      padding: 5px;
+      color: white;
+    }
+    .btnDelete{
+      background-color: #eb043c;
+      border: none;
+      padding: 5px;
+      color: white;
+    }
+  }
+}
+
+.add_rental_form {
+  width: 400px;
+  margin: 50px auto 0 auto;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    input {
+      padding: 5px 0;
+      margin: 5px 0;
+    }
+    button{
+      color: white;
+      background-color: #eb043c;
+      border: none;
+      width: 100px;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 10px;
+      
+    }
+  }
+}
+
+
