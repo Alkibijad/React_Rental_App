@@ -11,6 +11,7 @@ function App() {
   const [allUsers, setAllUsers] = useState([]);
 
   useEffect(() => {
+ 
     if (localStorage.hasOwnProperty("rents")) {
       setAllUsers(JSON.parse(localStorage.getItem("rents")));
     }
@@ -60,7 +61,7 @@ function App() {
             />
           }
         ></Route>
-        <Route path="/edit/:index" element={<Edit allUsersData={allUsers} editRent={editRent} /> } />
+        <Route path="/edit/:index" element={allUsers.length && <Edit allUsersData={allUsers} editRent={editRent} /> } />
       </Routes>
     </div>
   );
